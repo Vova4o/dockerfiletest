@@ -3,6 +3,7 @@ package main
 import (
 	"log"
 	"os"
+	"time"
 )
 
 func main() {
@@ -29,6 +30,8 @@ func main() {
 	if err != nil {
 		log.Println("Error writing to file:", err)
 	}
+
+	time.Sleep(2*time.Minute)
 }
 
 // WriteToFile writes the given text to the given file
